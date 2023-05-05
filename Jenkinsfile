@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                git 'https://github.com/Swedlg/SSPR_LAB_3.git'
+                git 'https://github.com/Swedlg/SSPR_LAB_3_Version_2.git'
                 bat './gradlew build'
             }
         }
@@ -33,6 +33,5 @@ pipeline {
                 }
             }
         }
-
     }
 }

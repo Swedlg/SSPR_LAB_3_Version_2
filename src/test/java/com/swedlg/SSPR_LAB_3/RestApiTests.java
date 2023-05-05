@@ -12,7 +12,7 @@ public class RestApiTests {
     public void testSumApi(){
         MainController mainController = new MainController();
         ResponseEntity<String> response = mainController.calculateSum("12.5", "3.2", null);
-        assertEquals("15.7", response.getBody());
+        assertEquals("-2.0", response.getBody());
     }
 
     @Test
