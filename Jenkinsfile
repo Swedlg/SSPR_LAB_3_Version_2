@@ -6,7 +6,7 @@ pipeline {
         stage('Build') {
             steps {
                 git 'https://github.com/Swedlg/SSPR_LAB_3_Version_2.git'
-                bat './gradlew assembly'
+                bat './gradlew assemble'
             }
         }
         stage('Test') {
